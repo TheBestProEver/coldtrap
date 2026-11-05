@@ -62,11 +62,11 @@ ul{margin:0;padding-left:1.1em}li{margin:.32em 0}
 /* hotspot labels */
 .hot{position:fixed;z-index:3;transform:translate(-50%,-110%);pointer-events:none;display:none}
 .hot .dot{width:10px;height:10px;border-radius:50%;background:var(--sulfur);margin:0 auto 6px;box-shadow:0 0 0 4px rgba(240,180,41,.25)}
-.hot .box{background:rgba(11,17,40,.88);border:1px solid rgba(191,227,242,.25);border-radius:8px;padding:.5em .75em;min-width:12em;max-width:16em;font-size:.78em;backdrop-filter:blur(4px)}
+.hot .box{color:#EEF6FB;background:rgba(11,17,40,.88);border:1px solid rgba(191,227,242,.25);border-radius:8px;padding:.5em .75em;min-width:12em;max-width:16em;font-size:.78em;backdrop-filter:blur(4px)}
 .hot .box b{display:block;font-family:var(--display);font-size:1.1em}
 .hot .box small{display:block;font:600 .82em/1 var(--body);color:var(--sulfur);margin-bottom:.25em}
 .hot .box small.buy{color:var(--mute)}
-.hot .box span{color:var(--ice)}
+.hot .box span{color:#CDE3F0}
 /* column + dome containers */
 .three{position:relative;border-radius:8px;overflow:hidden;background:radial-gradient(ellipse at 50% 30%,#1b2658,#0b1128 70%);border:1px solid var(--line)}
 .three canvas{display:block;width:100%;height:100%}
@@ -304,7 +304,7 @@ tr.us td{background:#FBF3DF}
 
   <!-- 8 Chemistry -->
   <section class="slide" data-temp="85" data-depth="crater floor">
-    <h2>The chemistry is a century old. The location is new.</h2>
+    <h2>Every part is proven. The system is new.</h2>
     <div class="chem">
       <div class="tile"><h3>Poison to sulfur: the Claus process</h3><div class="eq">2 H₂S + O₂ → 2 S + 2 H₂O</div><p>Standard in every oil refinery since the 1880s. Costs a little of our oxygen; returns sulfur, water, and heat.</p></div>
       <div class="tile"><h3>Water to air and fuel</h3><div class="eq">2 H₂O → 2 H₂ + O₂</div><p>Electrolysis by day, fuel cells by night. The oxygen plant doubles as the battery; the tanks are the reserve.</p></div>
@@ -312,7 +312,7 @@ tr.us td{background:#FBF3DF}
       <div class="tile"><h3>Ammonia to air and food</h3><div class="eq">4 NH₃ + 3 O₂ → 2 N₂ + 6 H₂O</div><p>Burned, ammonia gives nitrogen for habitat air. Oxidized to nitrate, it feeds hydroponic crops.</p></div>
     </div>
     <div class="foot"><span>Toutanji &amp; Grugel, NASA Marshall 2008; Omar &amp; Issa, ASCE Space '94; Grugel &amp; Toutanji, Adv. Space Res. 2008 (sublimation concerns)</span><span>Coldtrap</span></div>
-    <div class="notes">6:30–7:10. This is the technology-score slide: nothing here is new chemistry, and that's the point. Judges score "relies on existing technology" highly. Spend 30 seconds, not more.</div>
+    <div class="notes">6:30–7:10. Technology and originality together: every building block is proven, so the risk is low; connecting them is the invention. Spend 30 seconds.</div>
   </section>
 
   <!-- 9 Shelter 3D -->
@@ -402,7 +402,7 @@ tr.us td{background:#FBF3DF}
 
   <!-- Structure: everything from regolith -->
   <section class="slide" data-temp="67" data-depth="crater floor">
-    <h2 style="max-width:30ch">Every structural part is made on site, and each has been made before</h2>
+    <h2 style="max-width:30ch">Every structural part is made on site, from proven ingredients</h2>
     <div class="grid g2" style="grid-template-columns:1fr 1.1fr;gap:1.6em;font-size:.9em">
       <div>
         <div class="rows">
@@ -491,17 +491,18 @@ tr.us td{background:#FBF3DF}
 
   <!-- 12 Economics -->
   <section class="slide" data-temp="50" data-depth="crater floor">
-    <h2>What a kilogram is worth on the Moon</h2>
+    <h2>The product suite</h2>
     <div class="grid g2">
       <div>
-        <table aria-label="Unit economics">
-          <thead><tr><th>product</th><th>what it replaces</th><th>import cost today</th><th>our target price</th></tr></thead>
+        <table aria-label="Product suite">
+          <thead><tr><th>product</th><th>what it is</th><th>price</th></tr></thead>
           <tbody>
-            <tr><td class="hl">Clean water</td><td>shipped water and ISS-style recycling</td><td>$1.2M / kg</td><td>$150k / kg</td></tr>
-            <tr><td class="hl">Breathing oxygen</td><td>shipped tanks</td><td>$1.2M / kg</td><td>$200k / kg</td></tr>
-            <tr><td class="hl">Nitrogen</td><td>shipped tanks (no lunar source)</td><td>$1.2M / kg</td><td>$300k / kg</td></tr>
-            <tr><td class="hl">Shelter shielding</td><td>shipped mass or robot regolith piling</td><td>$1.2M / kg</td><td>$8M per shelter, leased</td></tr>
-            <tr><td class="hl">Night power</td><td>battery mass shipped from Earth</td><td>~$1.2M per 300 Wh</td><td>$4k / kWh</td></tr>
+            <tr><td class="hl">Coldtrap Survey</td><td>First in-place measurement of crater ice</td><td>data contracts</td></tr>
+            <tr><td class="hl">Coldtrap Water</td><td>Purified water, drinking and electrolysis grade</td><td>$150k / kg</td></tr>
+            <tr><td class="hl">Coldtrap Air</td><td>Breathing oxygen, and nitrogen from the ammonia</td><td>$200k / $300k per kg</td></tr>
+            <tr><td class="hl">Coldtrap Shelter</td><td>Fabric mold cast into a water-lined shelter</td><td>$8M / yr leased</td></tr>
+            <tr><td class="hl">Coldtrap Power</td><td>Night power from stored hydrogen and oxygen</td><td>$4k / kWh</td></tr>
+            <tr><td class="hl">Coldtrap Materials</td><td>Sulfur, regolith fiber, fertilizer</td><td>upside, not modeled</td></tr>
           </tbody>
         </table>
         <svg class="chart" viewBox="0 0 520 190" role="img" aria-label="Import cost versus Coldtrap target price per kilogram, log scale">
@@ -510,7 +511,7 @@ tr.us td{background:#FBF3DF}
   <g id="bars"></g>
 </svg>
 <script>(function(){const rows=[["water",150000],["oxygen",200000],["nitrogen",300000],["night power, per kWh",4000]];const g=document.getElementById('bars');const x=v=>150+(Math.log10(v)-3)*90;let y=14;rows.forEach(r=>{const imp=r[0].includes('power')?4000000:1200000;g.insertAdjacentHTML('beforeend',`<text x="144" y="${y+13}" text-anchor="end">${r[0]}</text><rect x="150" y="${y}" width="${x(imp)-150}" height="9" fill="#8C9BC4" opacity=".55"/><rect x="150" y="${y+11}" width="${x(r[1])-150}" height="9" fill="#F0B429"/>`);y+=36;});g.insertAdjacentHTML('beforeend',`<rect x="300" y="160" width="9" height="9" fill="#8C9BC4" opacity=".55"/><text x="313" y="168">import today</text><rect x="400" y="160" width="9" height="9" fill="#F0B429"/><text x="413" y="168">Coldtrap target</text>`);})();</script>
-        <p class="quiet" style="margin-top:.6em">Targets are set at roughly one-tenth of today's import cost, so they still beat importing if launch prices fall tenfold, as Starship rideshare targets (~$100k/kg) promise.</p>
+        <p class="quiet" style="margin-top:.6em">Every price sits near one-tenth of today's import cost, so they still beat importing if launch prices fall tenfold, as Starship rideshare targets (~$100k/kg) promise.</p>
       </div>
       <div>
         <div class="tile"><div class="cat">one pilot year, illustrative</div>
